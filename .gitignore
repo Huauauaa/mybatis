@@ -8,3 +8,4 @@ src/main/webapp/META-INF
 .idea
 .vscode
 *.iml
+/mybatis-demo/src/main/resources/db.properties
