@@ -17,6 +17,6 @@
     </environment>
   </environments>
   <mappers>
-    <mapper resource="com/huauauaa/dao/userMapper.xml"/>
+    <mapper resource="com/huauauaa/dao/UserMapper.xml"/>
   </mappers>
 </configuration>
