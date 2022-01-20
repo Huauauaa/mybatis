@@ -1,7 +1,7 @@
 package com.huauauaa.dao;
 
-import com.huauauaa.pojo.Teacher;
 import com.huauauaa.utils.MybatisUtils;
+import com.huauauaa.vo.TeacherVO;
 import java.util.List;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.After;
@@ -25,9 +25,9 @@ public class TeacherMapperTest {
     }
 
     @Test
-    public void testGetStudents() {
-        List<Teacher> teachers = mapper.getTeachers();
-        for (Teacher teacher : teachers) {
+    public void testGetTeachers() {
+        List<TeacherVO> teachers = mapper.getTeachers();
+        for (TeacherVO teacher : teachers) {
             System.out.println(teacher);
         }
     }

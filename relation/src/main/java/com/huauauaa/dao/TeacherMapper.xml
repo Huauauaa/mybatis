@@ -12,7 +12,7 @@
       and s.id = st.sid
   </select>
 
-  <resultMap id="TeacherStudent" type="Teacher">
+  <resultMap id="TeacherStudent" type="TeacherVO">
     <result property="id" column="tid"></result>
     <result property="name" column="tname"></result>
     <collection property="students" ofType="map">

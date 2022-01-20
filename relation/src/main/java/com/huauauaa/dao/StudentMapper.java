@@ -1,9 +1,9 @@
 package com.huauauaa.dao;
 
-import com.huauauaa.pojo.Student;
+import com.huauauaa.vo.StudentVO;
 import java.util.List;
 
 public interface StudentMapper {
 
-    List<Student> getStudents();
+    List<StudentVO> getStudents();
 }

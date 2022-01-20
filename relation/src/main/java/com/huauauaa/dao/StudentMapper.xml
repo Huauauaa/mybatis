@@ -11,7 +11,7 @@
     where s.id = st.sid
   </select>
 
-  <resultMap id="StudentTeacher" type="Student">
+  <resultMap id="StudentTeacher" type="StudentVO">
     <id property="id" column="sid"></id>
     <result property="name" column="sname"></result>
     <association property="teacher" javaType="Teacher">

@@ -1,7 +1,7 @@
 package com.huauauaa.dao;
 
-import com.huauauaa.pojo.Student;
 import com.huauauaa.utils.MybatisUtils;
+import com.huauauaa.vo.StudentVO;
 import java.util.List;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.After;
@@ -28,9 +28,7 @@ public class StudentMapperTest {
     @Test
     public void testGetStudents() {
 
-        List<Student> students = studentMapper.getStudents();
-        for (Student student : students) {
-            System.out.println(student.getTeacher());
-        }
+        List<StudentVO> students = studentMapper.getStudents();
+        students.forEach(System.out::println);
     }
 }
